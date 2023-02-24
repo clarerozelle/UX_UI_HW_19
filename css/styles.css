@@ -19,16 +19,30 @@ li{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.heroimg {
-    display: flex;
-    height: 600px; 
-    justify-content: flex-start;
-    padding-left: 10px;
+.introduction{
+    display: grid;
+    margin: 0px;
+    min-height: 300px;
+    height: 600px;
+    grid-template-rows: 25% 75%;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: 
+    "heroimg content"
+    "heroimg content";
+}
+
+.heroimg{
+    height: 600px;
+    padding-left: -10px;
+    grid-area: heroimg;
 }
 
 .content {
+    grid-area: content;
     width: 500px;
-    padding: 60px;
+    padding: 10px;
+    justify-self: start;
+    align-self: center;
 }
 
 .name{
@@ -78,6 +92,7 @@ footer {
     margin: 25px;
     flex-wrap: wrap;
     padding-bottom: 50px;
+    padding-top: 75px;
 }
 
 li #skills{
@@ -173,6 +188,7 @@ grid-area: MNdnr;
 
 #myWorktitle{
     padding-left: 25px;
+    padding-top: 75px;
 }
 
 .getIntouch{
@@ -190,4 +206,8 @@ grid-area: MNdnr;
         "MNdnr"
         "MNdrnPic";
     }
+}
+
+html{
+    scroll-behavior: smooth;
 }
