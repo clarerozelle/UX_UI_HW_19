@@ -1,0 +1,193 @@
+.logo {
+    align-items: flex-start;
+}
+
+.navigationText {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    justify-content:flex-end;
+    align-content: flex-end;
+}
+
+li{
+    display: flex;
+    align-items: flex-end;
+    padding: 2%;
+    margin-top: 0%;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heroimg {
+    display: flex;
+    height: 600px; 
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.content {
+    width: 500px;
+    padding: 60px;
+}
+
+.name{
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.title{
+font-size: x-large;
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+font-style: italic;
+}
+
+.aboutMe{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+button{
+    margin: 1%;
+}
+
+footer {
+    background-color: #373738;
+}
+
+.footerLinks{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.flexContainer{
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    height: 300px;
+    width: 800px;
+    margin: 25px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+li #skills{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+li #tools{
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:xx-large;
+    font-weight: bold;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    font-weight: 500;
+    font-style: italic;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+    font-weight: 400;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: large;
+}
+
+button{
+background-color: black;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 500;
+padding: 7px;
+}
+
+#myWork{
+    display: grid;
+    margin: 0px 5%;
+    min-height: 300px;
+    height: 70vh;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "fortyW fortyWpic"
+    "fortyW fortyWpic"
+    "MNdnrPic MNdnr"
+    "MNdrnPic MNdnr";
+}
+
+#fortyWskills{
+grid-area: fortyW;
+}
+
+#fortyWtitle{
+    grid-area: fortyW;
+}
+
+#fortyWdesc{
+    grid-area: fortyW;
+}
+
+#fortyWpic{
+    grid-area: fortyWpic;
+}
+
+#MNdnrSkills{
+    grid-area: MNdnr;
+}
+
+#MNdnrTitle{
+    grid-area: MNdnr;
+}
+
+#MNdnrParagraph{
+grid-area: MNdnr;
+}
+
+#MNdnrPic{
+    grid-area: MNdnrPic;
+}
+
+#myWorktitle{
+    padding-left: 25px;
+}
+
+.getIntouch{
+    padding-top: 100px; 
+    padding-bottom: 50px;
+}
+
+@media only  screen and (max-width: 600) {
+    #myWork {
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "fortyW"
+        "fortyWpic"
+        "MNdnr"
+        "MNdrnPic";
+    }
+}
