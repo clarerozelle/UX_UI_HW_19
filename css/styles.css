@@ -40,7 +40,7 @@ li{
 .content {
     grid-area: content;
     width: 500px;
-    padding: 10px;
+    padding: 210px;
     justify-self: start;
     align-self: center;
 }
@@ -83,46 +83,64 @@ footer {
     padding: 40px;
 }
 
-.flexContainer{
-    display:flex;
-    font-family: Arial, Helvetica, sans-serif;
-    flex-direction: column;
-    height: 300px;
-    width: 800px;
-    margin: 25px;
-    flex-wrap: wrap;
-    padding-bottom: 50px;
-    padding-top: 75px;
-}
-
-li #skills{
-    display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-}
-
 li #tools{
-    display: flex;
+    display: grid;
     justify-content: flex-end;
     align-content: flex-end;
 }
 
+.flexContainer{
+    display: grid;
+    margin: 0px;
+    min-height: 300px;
+    height: 600px;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "skillsSection toolsSection"
+    "skillsSection toolsSection";
+}
+
+.skillsSection{
+    grid-area: skillsSection;
+    justify-self: start;
+    align-self: center;
+}
+
+#skills{
+    padding: 10px;
+    font-size:20px;
+    font-weight: 400;
+}
+
+.toolsSection {
+    grid-area: toolsSection;
+    justify-self: end; 
+    align-self: center;
+}
+
+#tools{
+    padding: 10px;
+    font-size:20px;
+    font-weight: 400;
+}
+
 h1{
     font-family: Arial, Helvetica, sans-serif;
-    font-size:xx-large;
+    font-size:40px;
     font-weight: bold;
 }
 
 h2{
     font-family: Arial, Helvetica, sans-serif;
-    font-size:x-large;
+    font-size:25px;
     font-weight: 500;
     font-style: italic;
 }
 
 p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size:medium;
+    font-size:20px;
     font-weight: 400;
 }
 
@@ -192,7 +210,7 @@ grid-area: MNdnr;
 }
 
 .getIntouch{
-    padding-top: 100px; 
+    padding-top: 250px; 
     padding-bottom: 50px;
 }
 
@@ -205,6 +223,16 @@ grid-area: MNdnr;
         "fortyWpic"
         "MNdnr"
         "MNdrnPic";
+    }
+}
+
+@media only  screen and (max-width: 600) {
+    #introduction {
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "heroimg content"
+        "heroimg content";
     }
 }
 
