@@ -118,10 +118,6 @@ li #tools{
     font-weight: 400;
 }
 
-.toolsTitle{
-    box-shadow: 10px 5px 5px whitesmoke;
-}
-
 .toolsSection {
     grid-area: toolsSection;
     justify-self: end; 
