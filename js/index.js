@@ -1,6 +1,11 @@
-$("#serious").click(function(){
+$(".serious").click(function(){
     $('html, body').animate({
-        scrollTop: $("#myWorktitle").offset().top
+        scrollTop: $(".mySkills").offset().top
     }, 500);
+});
 
+$(".contact").click(function(){
+    $('html, body').animate({
+        scrollTop: $(".getIntouch").offset().top
+    }, 500);
 });
